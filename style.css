@@ -6,7 +6,7 @@ body{
     font-family: "Bebas Neue", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.3vw;
+    font-size: 1.3vw + 1.1vh;
 }
 .wrapper {
     
@@ -25,5 +25,5 @@ body{
     font-weight: 400;
     font-style: normal;
     justify-self: flex-end;
-    font-size: 0.9vw;
+    font-size: 0.9vw + 1vh;
 }
