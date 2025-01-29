@@ -32,20 +32,35 @@
             </div>
  
             <div class="nav">
-                <button id="create">Создать заметку</button>
+                <button id="create" onclick="window.created1.showModal()">Создать заметку</button>
+
+                
             </div>
         </div>
         <div class="based">
-  
-            <div id="create_dialog" class="hiden">
+            
+            <dialog id="created1">
                 <form class="form1">
                     Название:<input type="text" class="a" id="name">
                     <p></p>Описание:<input type="text" class="a" id="description">
-                    <p></p>ДедЛайн:<input type="date" class="a" id="deadline">
-                    <dl>
-                    </dl>
+                    <p></p>Конец:<input type="date" class="a" id="deadline">
+                    <p></p>Теги:<select id="select1" class="a">
+                        <option></option>
+                        <option class="tag">Работа</option>
+                        <option class="tag">Хобби</option>
+                        <option class="tag">Спорт</option>
+                        <option class="tag">Мероприятия</option>
+                        
+
+                      </select> 
+
                 </form>
-            </div>
+      
+                <button id="close" onclick="window.created1.close()">Создать</button>
+                <button id="create1" onclick="window.created1.close()">Закрыть</button>
+    
+            </dialog>
+            <script src="tag_system.js"></script>
         </div>
     </header>
 </body>

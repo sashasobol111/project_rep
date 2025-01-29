@@ -1,20 +1,23 @@
-#create_dialog {
-    
-    
-    height: 30vh;
-    width: 50vw;
-    margin-left: 25%;
+#created1 {
 
-    background-color: #929292;
-}
 
-.form1{
-
+    height: 24vh;
+    border-radius: 10px;
+    border: 2px solid black;
+    align-items: flex-start;
 }
 
 .a {
-
+    margin-top: 3%;
 }
-.hiden{
+#close {
+    margin-top: 10px;
+    width: 40%;
+    height: 14%;
+}
+#create1 {
 
+    margin-top: 10px;
+    width: 40%;
+    height: 14%;
 }
