@@ -1,4 +1,11 @@
 .tags1{
-    
+    margin-top: 3px;
+    margin-left: 3px;
+    font-size: small;
+    display: grid;
+    place-items: center;
+    border-radius: 7px;
+    height: 15%;
+    width: 24%;
     background-color: lightblue;
 }

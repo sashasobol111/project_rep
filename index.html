@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="tag.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="dialog.css">
@@ -40,25 +41,29 @@
         <div class="based">
             
             <dialog id="created1">
-                <form class="form1">
-                    Название:<input type="text" class="a" id="name">
-                    <p></p>Описание:<input type="text" class="a" id="description">
-                    <p></p>Конец:<input type="date" class="a" id="deadline">
-                    <p></p>Теги:<select id="select1" class="a">
-                        <option></option>
-                        <option class="tag">Работа</option>
-                        <option class="tag">Хобби</option>
-                        <option class="tag">Спорт</option>
-                        <option class="tag">Мероприятия</option>
+                <div class="di">
+                    <form class="form1">
+
+                        <p>Название:</p><input type="text" class="a" id="name"> 
+                        <p>Описание:</p><input type="text" class="a" id="description"> 
+                        <p>Конец:</p> <input type="date" class="a" id="deadline"> 
+                        <p>Теги:</p><select id="select1" class="a">
+                            <option></option>
+                            <option class="tag">Работа</option>
+                            <option class="tag">Хобби</option>
+                            <option class="tag">Спорт</option>
+                            <option class="tag">Мероприятия</option>
                         
 
-                      </select> 
-
-                </form>
-      
-                <button id="close" onclick="window.created1.close()">Создать</button>
-                <button id="create1" onclick="window.created1.close()">Закрыть</button>
-    
+                          </select> 
+                          <div class="tags1" id="1">nfkhfj</div>
+                    </form>
+                    <div id="but1">
+                        <button id="create1" onclick="window.created1.close()">Закрыть</button>
+                        <button id="close" onclick="window.created1.close()">Создать</button>
+                </div>
+                
+            </div>
             </dialog>
             <script src="tag_system.js"></script>
         </div>
