@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="dialog.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -19,7 +16,7 @@
             <div class="wrapper">
 
                 <div class="works">
-                    <a>Список дел</a>
+                    <a>To-Do List</a>
                 </div>
 
                 <div class="info">
@@ -33,7 +30,7 @@
             </div>
  
             <div class="nav">
-                <button id="create" onclick="window.created1.showModal()">Создать заметку</button>
+                <button id="create" onclick="window.created1.showModal()">Create to-do</button>
 
                 
             </div>
@@ -44,25 +41,25 @@
                 <div class="di">
                     <form class="form1">
 
-                        <p>Название:</p><input type="text" class="a" id="name"> 
-                        <p>Описание:</p><input type="text" class="a" id="description"> 
-                        <p>Конец:</p> <input type="date" class="a" id="deadline"> 
-                        <p>Теги:</p><select id="select1" class="a">
-                            <option class="tag">Работа</option>
-                            <option class="tag">Хобби</option>
-                            <option class="tag">Спорт</option>
-                            <option class="tag">Мероприятия</option>
+                        <p>Name:</p><input type="text" class="a" id="name"> 
+                        <p>Description:</p><input type="text" class="a" id="description"> 
+                        <p>Dead-line:</p> <input type="date" class="a" id="deadline"> 
+                        <p>Tags:</p><select id="select1" class="a">
+                            <option value="Work" class="tag">Work</option>
+                            <option value="Hobby" class="tag">Hobby</option>
+                            <option value="Sport" class="tag">Sport</option>
+                            <option value="Ivent" class="tag">Ivent</option>
                         
 
-                          </select> 
+                          </select> <button id="del_tag">clear</button>
                           <div id="tags_sys">
                                
                           </div>
                          
                     </form>
                     <div id="but1">
-                        <button id="create1" onclick="window.created1.close()">Закрыть</button>
-                        <button id="close" onclick="window.created1.close()">Создать</button>
+                        <button id="create1" onclick="window.created1.close()">Close</button>
+                        <button id="close" onclick="window.created1.close()">Create</button>
                 </div>
                 
             </div>

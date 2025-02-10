@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            const temperature = data.main.temp;
+            const temperature = (data.main.temp).toFixed(0);
             const description = data.weather[0].description;
             document.getElementById('weather').innerHTML = `⛅ ${temperature}°C`;
         })
