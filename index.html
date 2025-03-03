@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="dialog.css">
+    <link rel="stylesheet" href="to-do_cont.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -29,11 +30,7 @@
                 
             </div>
  
-            <div class="nav">
-                <button id="create" onclick="window.created1.showModal()">Create to-do</button>
-
-                
-            </div>
+            
         </div>
         <div class="based">
             
@@ -44,28 +41,51 @@
                         <p>Name:</p><input type="text" class="a" id="name"> 
                         <p>Description:</p><input type="text" class="a" id="description"> 
                         <p>Dead-line:</p> <input type="date" class="a" id="deadline"> 
+                        
+                          
+                        </form>
                         <p>Tags:</p><select id="select1" class="a">
                             <option value="Work" class="tag">Work</option>
                             <option value="Hobby" class="tag">Hobby</option>
                             <option value="Sport" class="tag">Sport</option>
                             <option value="Ivent" class="tag">Ivent</option>
-                        
-
-                          </select> <button id="del_tag">clear</button>
-                          <div id="tags_sys">
-                               
-                          </div>
-                         
-                    </form>
+                          </select> 
+                    
+                    <div id="temp">
+                        <div id="tags_sys"> </div>
+                    </div>
+                   
                     <div id="but1">
-                        <button id="create1" onclick="window.created1.close()">Close</button>
-                        <button id="close" onclick="window.created1.close()">Create</button>
+                        <button id="del_tag">Clear tags</button>
+                        <button id="close">Close</button>
+                        <button id="create1">Create</button>
+                    </div>
+                    
                 </div>
-                
-            </div>
             </dialog>
             <script src="tag_system.js"></script>
         </div>
     </header>
+    <div class="main">
+        <div class="nav">
+            <button id="create">Create to-do</button>
+            
+            
+        </div>
+        <div class="to-do-cont">
+            <div class="to-do">
+                <div class="head_todo"><h3 class="name-to"><b>Name To-do</b></h3></div>
+                <div class="center_todo"><p>jo;jugo;rejgor;eigjuor;jdoigfhreiufhreiuyhfreiugor;egjuroi;lgrdfjghhrjhjhjro;igjreo;lgjreo;gjueoigjuogijuoli</p></div>
+                <div class="buttons_todo">
+                    <button class="edit">Edit</button>
+                    <button class="complete">Comlete</button>
+                    <button class="delete">Delete</button>
+                </div>  
+            </div>
+            
+        </div>
+        <script src="close-created.js"></script>
+    </div>
 </body>
 </html>
+

@@ -5,7 +5,12 @@
     display: grid;
     place-items: center;
     border-radius: 7px;
-    height: 25%;
+    height: 2vh;
     width: 24%;
     background-color: lightblue;
+}
+
+#select1 {
+    
+    width: 55.3%;
 }

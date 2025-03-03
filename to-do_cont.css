@@ -1,0 +1,39 @@
+.to-do-cont{
+    background-color:rgb(255, 255, 255);
+    width: 70%;
+
+}
+
+.to-do{
+    border: 2px solid black;
+    width: 60vw;
+    height: 18vh;
+    margin-top: 1vh;
+    background-color:rgb(219, 219, 219);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-wrap: break-word;
+}
+
+.head_todo{
+    font-weight: bold;
+    font-size: larger;
+
+    align-self: center;
+}
+.center_todo{
+    margin-bottom: 7vh;
+}
+.buttons_todo{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 1vw;
+    margin-bottom: 1vh;
+}
+.main{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

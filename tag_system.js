@@ -4,24 +4,24 @@ const tags1 = document.getElementsByClassName("tags1");
 const div2 = document.getElementById("tags_sys");
 
 
-let i = 0;
-el.addEventListener('change', () => {
-    if(i >= 3){
 
-    }else{
+el.addEventListener('change', () => {
+    let i = 0;
+
         let tag = el.options[el.selectedIndex].value;
+
+        
         let name_tag = tag;
-        div2.innerHTML += `<div class="tags1" id="${i}">${name_tag}</div>`;
-        i++;
-    }
+        div2.innerHTML += `<div class="tags1">${name_tag}</div>`;
+
     
 
 })
 
+
 clear.addEventListener('click', () => {
-    for (let index = 0; index < tags1.length; index++) {
-        tags1[index].remove;
-        
+    if(tags1.length >= 0){
+        tags1[0].remove();
     }
 })
 
