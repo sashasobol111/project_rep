@@ -9,7 +9,16 @@
     width: 24%;
     background-color: lightblue;
 }
-
+.tags2{
+    margin-top: 1vh;
+    font-size: small;
+    display: grid;
+    place-items: center;
+    border-radius: 7px;
+    height: 5%;
+    width: 10%;
+    background-color: lightblue;
+}
 #select1 {
     
     width: 55.3%;
