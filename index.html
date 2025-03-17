@@ -2,98 +2,44 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="tag.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="dialog.css">
-    <link rel="stylesheet" href="to-do_cont.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Список дел</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="wrapper">
-
-                <div class="works">
-                    <a>To-Do List</a>
-                </div>
-
-                <div class="info">
-                    <div id="weather"></div>
-                    <div id="curses"></div>
-                </div>
-                
-                <script src="weather_get.js"></script>
-                <script src="curses_get.js"></script>
-                
-            </div>
- 
-            
+    <div class="container">
+        <h1>Список дел</h1>
+        
+        <button id="addTaskBtn">Добавить задачу</button>
+        
+        <div id="filterSort">
+            <input type="text" id="search" placeholder="Поиск по названию...">
+            <select id="sort">
+                <option value="date">По дате</option>
+                <option value="title">По названию</option>
+            </select>
         </div>
-        <div class="based">
-            
-            <dialog id="created1">
-                <div class="di">
-                    <form class="form1">
-
-                        <p>Name:</p><input type="text" class="a" id="name"> 
-                        <p>Description:</p><input type="text" class="a" id="description"> 
-                        <p>Dead-line:</p> <input type="date" class="a" id="deadline"> 
-                        
-                          
-                        </form>
-                        <p>Tags:</p><select id="select1" class="a">
-                            <option value="Work" class="tag">Work</option>
-                            <option value="Hobby" class="tag">Hobby</option>
-                            <option value="Sport" class="tag">Sport</option>
-                            <option value="Ivent" class="tag">Ivent</option>
-                          </select> 
-                    
-                    <div id="temp">
-                        <div id="tags_sys"> </div>
-                    </div>
-                   
-                    <div id="but1">
-                        <button id="del_tag">Clear tags</button>
-                        <button id="close">Close</button>
-                        <button id="create1">Create</button>
-                    </div>
-                    
-                </div>
-            </dialog>
-            <script src="tag_system.js"></script>
-        </div>
-    </header>
-    <div class="main">
-        <div class="nav">
-            <button id="create">Create to-do</button>
-            
-            
-        </div>
-        <div id="to-do-cont">
-            <div id="0" class="to-do">
-                <div class="h000ead_todo"><h3 class="name-to"><b>Name To-do</b></h3></div>
-                <div class="center_todo">
-                    <p class="desc"></p>
-                    <p class="deadl">12-12-2025</p>
-                </div>
-                <div class="tagi">
-
-                    <div class="tags2">swss</div>
-                </div>
-                <div class="buttons_todo">
-                    <button class="edit">Edit</button>
-                    <button class="complete">Comlete</button>
-                    <button class="delete">Delete</button>
-                </div>  
-            </div>
-            
-        </div>
-        <script src="to-do-work.js"></script>
-        <script src="close-created.js"></script>
+        
+        <ul id="taskList"></ul>
     </div>
+
+    <!-- Форма добавления/редактирования -->
+    <div id="taskModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Добавить задачу</h2>
+            <input type="text" id="taskTitle" placeholder="Название">
+            <textarea id="taskDesc" placeholder="Описание"></textarea>
+            <input type="date" id="taskDeadline">
+            <input type="text" id="taskTags" placeholder="Теги (через запятую)">
+            <select id="taskStatus">
+                <option value="pending">В процессе</option>
+                <option value="completed">Завершена</option>
+            </select>
+            <button id="saveTaskBtn">Сохранить</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
